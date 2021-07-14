@@ -22,7 +22,7 @@ httpmng = urllib3.PoolManager()
 #combining the tables with the movies and the tables with the url
 
 url_data1 = pd.read_csv("/content/drive/My Drive/rpython/url.csv")
-url_data_mov = pd.read_excel(r"/content/drive/My Drive/rpython/complete_data.xlsx")
+url_data_mov = pd.read_excel(r"/content/drive/My Drive/rpython/movie_name.xlsx")
 url_data = url_data1.merge(url_data_mov, on='Unique_ID')
 
 #url_data is our intial data which has the movie name and imdb url of the movie
