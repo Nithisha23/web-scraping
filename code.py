@@ -324,3 +324,6 @@ final_data = pd.concat([num_data, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10], axis
 
 #checking for null values
 final_data.isna().sum()
+
+#exporting the data 
+final_data.to_csv("/content/drive/My Drive/rpython/final_data.csv", index=False)
